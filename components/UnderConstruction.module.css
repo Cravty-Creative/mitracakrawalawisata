@@ -1,0 +1,22 @@
+.wrapper {
+  @apply 
+  w-[100vw] 
+  h-[100vh] 
+  bg-[#F5F7F9]
+  flex
+  flex-col
+  justify-center
+  items-center
+  gap-4;
+}
+
+.img-wrapper {
+  @apply 
+  w-80 
+  h-80
+}
+
+.img-wrapper > img {
+  @apply
+  w-full
+}
