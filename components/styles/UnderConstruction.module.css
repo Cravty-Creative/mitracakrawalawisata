@@ -10,6 +10,14 @@
   gap-4;
 }
 
+.company {
+  @apply 
+  mb-10 
+  font-light 
+  text-xl 
+  uppercase;
+}
+
 .img-wrapper {
   @apply 
   w-80 
@@ -19,4 +27,14 @@
 .img-wrapper > img {
   @apply
   w-full
+}
+
+.footer {
+  @apply 
+  flex 
+  flex-col 
+  items-center 
+  gap-2 
+  text-xl 
+  font-light;
 }

@@ -1,3 +1,9 @@
+@import url('/fonts/stylesheet-public-sans.css');
+@import url('/fonts/stylesheet-mulish.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  color: #1f2130;
+}

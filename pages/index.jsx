@@ -1,16 +1,16 @@
-import Head from "next/head";
+/* eslint-disable @next/next/no-img-element */
+import Header from "../components/Header";
 import UnderConstruction from "../components/UnderConstruction";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta name="description" content="Travel Management" />
-        <meta name="keywords" content="Travel, Haji, Umrah" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <title>Mitra Cakrawala Wisata</title>
-      </Head>
+      <Header
+        pageTitle="Travel Agent"
+        description="Travel Partner Agent for Everyone"
+        keyword="Travel, Haji, Umrah, Staycation, Holiday"
+      />
       <UnderConstruction />
     </>
-  )
+  );
 }

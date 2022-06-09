@@ -1,0 +1,77 @@
+.notfound {
+  @apply
+  container
+  mx-auto
+  h-[100vh]
+  flex
+  justify-center
+  items-center
+  lg:px-24;
+}
+
+.wrapper {
+  @apply
+  w-full
+  grid
+  grid-cols-1
+  gap-8
+  lg:grid-cols-2;
+}
+
+.text-wrapper {
+  @apply
+  flex
+  flex-col
+  items-center
+  gap-5
+  lg:justify-between
+  lg:items-start
+  lg:after:content-['']
+  ;
+}
+
+.company-name {
+  @apply
+  text-lg;
+}
+
+.heading-wrapper {
+  @apply
+  flex
+  flex-col
+  items-center
+  gap-2
+  lg:items-start;
+}
+
+.heading1 {
+  @apply
+  text-2xl
+  lg:text-3xl;
+}
+
+.heading2 {
+  @apply
+  font-bold
+  text-7xl
+  lg:text-8xl;
+}
+
+.heading-desc {
+  @apply
+  text-xl
+  mb-4;
+}
+
+.img-wrapper {
+  @apply
+  flex
+  justify-center;
+}
+
+.img-wrapper > img {
+  @apply
+  w-1/2
+  md:w-1/3
+  lg:w-full;
+}

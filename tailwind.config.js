@@ -1,7 +1,18 @@
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Public Sans", "sans-serif"],
+        secondary: ["Mulish", "sans-serif"],
+      },
+      color: {
+        primary: "#383B5A",
+      },
+    },
   },
   plugins: [],
 };
