@@ -65,13 +65,7 @@
 
 .img-wrapper {
   @apply
-  flex
-  justify-center;
-}
-
-.img-wrapper > img {
-  @apply
-  w-1/2
-  md:w-1/3
+  w-3/4
+  mx-auto
   lg:w-full;
 }

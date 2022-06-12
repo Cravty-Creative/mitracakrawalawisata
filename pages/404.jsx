@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 import Button from "../components/Button";
 import Header from "../components/Header";
 import style from "../styles/modules/404.module.css";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function NotFound() {
   const router = useRouter();
@@ -25,7 +25,14 @@ export default function NotFound() {
             </div>
           </div>
           <div className={style["img-wrapper"]}>
-            <img src="/404.png" alt="Not Found Illustration" />
+            <Image
+              src="/404.png"
+              alt="Not Found Illustration"
+              height={100}
+              width={120}
+              layout="responsive"
+              priority
+            />
           </div>
         </div>
       </div>
