@@ -31,5 +31,8 @@ yarn-error.log*
 # vercel
 .vercel
 
-# static zip file
-*.zip 
+# static file zip 
+*.zip
+
+# package_lock
+package-lock.json
