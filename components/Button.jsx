@@ -11,7 +11,9 @@ export default function Button({
     case "primary":
       return (
         <button
-          className={`${style["primary"]} ${style["btn"]} ${className}`}
+          className={`${style["primary"]} ${style["btn"]} ${
+            className ? className : ""
+          }`}
           type={type}
           onClick={onClick}
         >

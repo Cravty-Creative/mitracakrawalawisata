@@ -1,0 +1,111 @@
+.sidebar {
+  @apply
+  hidden
+  fixed
+  top-0
+  left-0
+  h-full
+  w-full
+  z-40;
+}
+
+.sidebar.open {
+  @apply
+  block
+  bg-slate-800/25;
+}
+
+.sidebar-wrapper {
+  @apply
+  w-3/4
+  h-full
+  bg-white
+  float-right
+  translate-x-[100vw]
+  px-5
+  py-7
+  flex
+  flex-col
+  gap-6;
+}
+
+.sidebar-wrapper.open {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.sidebar-head {
+  @apply
+  flex
+  justify-between
+  items-center
+  border-b
+  pb-3;
+}
+
+.sidebar-body {
+  @apply
+  h-full
+  flex
+  flex-col
+  justify-between;
+}
+
+.menu {
+  @apply
+  flex
+  flex-col
+  gap-3;
+}
+
+.menu-list {
+  @apply
+  py-1
+  px-2
+  rounded-md
+  border
+  border-transparent;
+}
+
+.menu-list.active {
+  @apply
+  font-semibold
+  bg-green-100
+  border-green-200
+  shadow-md
+  shadow-green-100;
+}
+
+.btn-cta-group {
+  @apply
+  flex
+  gap-4
+  items-center
+}
+
+.link-to-center {
+  @apply
+  flex
+  items-center;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
