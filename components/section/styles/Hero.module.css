@@ -1,0 +1,184 @@
+.hero {
+  @apply
+  min-h-screen
+  max-w-[100vw]
+  overflow-hidden
+  relative
+  flex
+  items-center
+  bg-[url('/hero-pattern.svg')]
+  bg-no-repeat
+  bg-bottom
+  bg-cover
+  pt-36
+  lg:pt-0
+}
+
+.hero-body {
+  @apply
+  container
+  grid
+  grid-cols-12
+  gap-2
+}
+
+.mouse-animation-wrapper {
+  @apply
+  hidden
+  absolute
+  bottom-10
+  right-1/2
+  translate-x-1/2
+  font-light
+  lg:flex
+  lg:flex-col
+  lg:items-center
+  lg:gap-3
+}
+
+.mouse-animation {
+  @apply
+  h-12
+  w-fit
+  p-2
+  rounded-xl
+  border
+  bg-white
+  border-gray-400
+  shadow-lg
+  shadow-slate-800/20
+}
+
+.mouse-animation > .dot {
+  @apply
+  w-2
+  h-2
+  rounded-full
+  bg-slate-800;
+  animation: scroll-down 1.5s infinite ;
+}
+
+.hero-description {
+  @apply
+  flex
+  flex-col
+  gap-4
+  justify-center
+  items-center
+  col-span-12
+  lg:items-start
+  lg:col-span-6
+  xl:col-span-7
+}
+
+.hero-image {
+  @apply
+  col-span-12
+  grid
+  grid-cols-12
+  gap-4
+  pt-10
+  lg:pt-0
+  lg:col-span-6
+  lg:pl-4
+  xl:col-span-5
+}
+
+.desc1 {
+  @apply
+  font-medium
+  text-center
+  lg:text-left
+  lg:text-lg
+  xl:text-xl
+}
+
+.desc2 {
+  @apply
+  text-center
+  lg:text-start
+}
+
+.headline {
+  @apply
+  font-bold
+  text-center
+  text-4xl
+  lg:text-start
+  lg:text-5xl
+  xl:text-7xl
+}
+
+.btn-cta-hero {
+  @apply
+  w-fit
+  mt-2
+}
+
+.group-card-1 {
+  @apply
+  col-span-12
+  flex
+  flex-col
+  gap-4
+  lg:col-span-7
+}
+
+.group-card-2 {
+  @apply
+  col-span-12
+  flex
+  flex-col
+  gap-4
+  justify-center
+  lg:col-span-5
+}
+
+.group-card-1  .card-1, .group-card-1  .card-2  {
+  @apply
+  bg-white
+  p-4
+  rounded-2xl
+  shadow-xl
+  shadow-slate-500/10
+  motion-safe:duration-300
+  lg:hover:scale-110
+}
+
+.group-card-2  .card-1, .group-card-2  .card-2  {
+  @apply
+  bg-white
+  p-4
+  rounded-2xl
+  shadow-xl
+  shadow-slate-500/10
+  motion-safe:duration-300
+  lg:hover:scale-110
+}
+
+.another-offers {
+  @apply
+  border-2 
+  border-gray-100 
+  rounded-lg 
+  p-1 
+  mb-3 
+  w-full 
+  flex 
+  flex-col 
+  gap-1 
+  items-center 
+  hover:border-yellow-300
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(250%);
+    opacity: 0.3;
+  }
+}
+

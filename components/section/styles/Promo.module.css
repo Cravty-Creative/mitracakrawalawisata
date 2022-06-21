@@ -1,0 +1,32 @@
+.promo-wrapper {
+  @apply
+  min-h-[90vh]
+  max-w-[100vw]
+  relative
+  flex
+  items-center
+  bg-[url('/promo-pattern.svg')]
+  bg-no-repeat
+  bg-bottom
+  bg-cover;
+}
+
+.promo {
+  @apply
+  container
+  h-full
+  grid
+  grid-cols-12
+  gap-4
+}
+
+.promo-title {
+  @apply
+  h-full
+  col-span-4
+}
+
+.promo-slider {
+  @apply
+  col-span-8
+}
