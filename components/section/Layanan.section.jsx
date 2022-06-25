@@ -13,23 +13,23 @@ export default function Layanan() {
   const dataLayanan = [
     {
       title: "Paket Umrah",
-      img: "/paket-3.png",
+      img: "/mecca-night.jpg",
       desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
     },
     {
-      title: "Haji Reguler",
-      img: "/mecca-hero.jpg",
-      desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
+      title: "Paket Wisata Halal",
+      img: "/istanbul.jpg",
+      desc: "Wisata Halal dengan destinasi negara timur tengah",
     },
     {
       title: "Visa",
       img: "/visa.png",
-      desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
+      desc: "Memberikan kemudahan pengurusan Visa untuk kebutuhan wisata anda",
     },
     {
       title: "Passport",
       img: "/passport.png",
-      desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
+      desc: "Memudahkan pengurusan passport dengan harga yang terjangkau",
     },
   ];
 

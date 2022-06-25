@@ -100,7 +100,7 @@ export default function Promo() {
                         src={cardImageUrl[item]}
                         alt="card-1"
                         layout="fill"
-                        objectFit="cover"
+                        // objectFit="cover"
                       />
                     </div>
                   </div>
