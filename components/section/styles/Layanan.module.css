@@ -1,0 +1,55 @@
+.layanan {
+  @apply
+  min-h-[92vh]
+  bg-[url('/about-pattern.svg')]
+  bg-no-repeat
+  bg-top
+  bg-cover
+  pt-28;
+}
+
+.layanan-wrapper {
+  @apply
+  container
+  flex
+  flex-col
+  justify-center
+  items-center
+  gap-3;
+}
+
+.card-wrapper {
+  @apply
+  w-full
+  grid
+  grid-cols-4
+  gap-10
+  mt-20;
+}
+
+.card {
+  @apply
+  p-4
+  rounded-2xl
+  col-span-4
+  md:col-span-2
+  xl:col-span-1
+  flex
+  flex-col
+  items-center
+  gap-4
+  hover:bg-white
+  hover:shadow-xl
+  hover:shadow-green-400/20
+  hover:scale-105
+  motion-safe:hover:duration-500;
+}
+
+.image-wrapper {
+  @apply
+  relative
+  w-full
+  h-64
+  rounded-xl
+  overflow-hidden;
+}

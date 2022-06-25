@@ -1,0 +1,93 @@
+.plan {
+  @apply
+  lg:min-h-[100vh]
+  min-h-[120vh]
+  bg-[url('/about-pattern.svg')]
+  bg-no-repeat
+  bg-top
+  bg-cover;
+}
+
+.plan-wrapper {
+  @apply
+  container
+  flex
+  flex-col
+  items-center
+  justify-center
+  gap-4;
+}
+
+.card-wrapper {
+  @apply
+  hidden
+  mt-20
+  lg:grid
+  grid-cols-3
+  gap-8
+}
+
+.card {
+  @apply
+  min-h-[50vh]
+  mx-auto
+  w-72
+  p-6
+  bg-white
+  border
+  rounded-3xl
+  flex
+  flex-col
+  justify-between
+}
+
+.card.middle {
+  @apply
+  scale-110
+}
+
+.dot {
+  @apply 
+  bg-[#1E293B]
+  w-2
+  h-2
+  rounded-full
+}
+
+.image-content {
+  @apply
+  w-[100vw]
+  relative
+  lg:hidden
+}
+
+.btn-chevron {
+  @apply
+  absolute
+  top-1/2
+  translate-y-[-50%]
+  z-30
+  w-12
+  h-12
+  flex
+  justify-center
+  items-center
+  bg-white
+  rounded-full
+  border
+  shadow-lg
+  shadow-slate-700/10
+  motion-safe:hover:shadow-green-400/40
+  motion-safe:duration-200
+  hover:border-green-200;
+}
+
+.btn-chevron-prev {
+  @apply
+  left-10;
+}
+
+.btn-chevron-next {
+  @apply
+  right-10;
+}

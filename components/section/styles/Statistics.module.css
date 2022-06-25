@@ -1,0 +1,36 @@
+.stat-wrapper {
+  @apply
+  bg-[url('/hero-pattern.svg')]
+  bg-no-repeat
+  bg-bottom
+  bg-cover
+  bg-fixed;
+}
+
+.stats {
+  @apply
+  min-h-[30vh]
+  w-full
+  py-16;
+  background: radial-gradient( 100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100% );
+  box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
+  backdrop-filter: blur(42px);
+}
+
+.content-wrapper {
+  @apply
+  container
+  grid
+  grid-cols-1
+  md:grid-cols-4
+  lg:grid-cols-5
+  gap-8
+}
+
+.stat {
+  @apply
+  w-full
+  col-span-1
+  md:col-span-2
+  lg:col-span-1
+}

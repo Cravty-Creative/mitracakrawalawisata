@@ -1,0 +1,74 @@
+.popular {
+  @apply
+  min-h-[100vh]
+  bg-[url('/about-pattern.svg')]
+  bg-no-repeat
+  bg-top
+  bg-cover
+  pt-10;
+}
+
+.popular-wrapper {
+  @apply
+  container
+  pt-16;
+}
+
+.header {
+  @apply
+  flex
+  flex-col
+  gap-2
+  md:flex-row
+  justify-between;
+}
+
+.card-wrapper {
+  @apply
+  mt-10
+  grid 
+  grid-cols-3
+  md:grid-cols-4
+  lg:grid-cols-3
+  gap-10
+}
+
+.card {
+  @apply
+  col-span-3
+  md:col-span-2
+  lg:col-span-1
+  p-4
+  flex
+  flex-col
+  gap-2
+  rounded-xl
+  hover:bg-white
+  hover:shadow-xl
+  hover:shadow-yellow-400/20
+  hover:scale-105
+  motion-safe:hover:duration-500;
+}
+
+.image-wrapper {
+  @apply
+  mb-4
+  relative
+  rounded-lg
+  overflow-hidden
+  w-full
+  h-96;
+}
+
+.overlay {
+  @apply
+  absolute
+  w-full 
+  h-full
+  bg-gradient-to-t 
+  from-slate-800/70
+  to-transparent
+  flex
+  items-end
+  p-4
+}

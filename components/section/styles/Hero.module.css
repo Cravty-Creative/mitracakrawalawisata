@@ -6,7 +6,8 @@
   relative
   flex
   items-center
-  bg-[url('/hero-pattern.svg')]
+  bg-[url('/hero-pattern-alternative.svg')]
+  lg:bg-[url('/hero-pattern.svg')]
   bg-no-repeat
   bg-bottom
   bg-cover

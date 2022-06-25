@@ -64,10 +64,11 @@
   px-2
   rounded-md
   border
-  border-transparent;
+  border-transparent
+  capitalize;
 }
 
-.menu-list.active {
+.menu-list.active, .menu-list:hover {
   @apply
   font-semibold
   bg-green-100

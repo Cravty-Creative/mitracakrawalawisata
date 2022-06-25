@@ -6,6 +6,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Hero from "../components/section/Hero.section";
 import Promo from "../components/section/Promo.section";
+import Statistics from "../components/section/Statistics";
+import About from "../components/section/About.section";
+import Layanan from "../components/section/Layanan.section";
+import Popular from "../components/section/Popular.section";
+import Testimoni from "../components/section/Testimoni.section";
+import Plan from "../components/section/Plan.section";
+import Footer from "../components/section/Footer.section";
+import Footnote from "../components/section/Footnote.section";
 
 export default function Home() {
   useEffect(() => {
@@ -21,14 +29,27 @@ export default function Home() {
         description="Travel Partner Agent for Everyone"
         keyword="Travel, Haji, Umrah, Staycation, Holiday"
       />
-      <Navbar menuState={menuState} setSidebarState={setSidebarState} />
+      <Navbar
+        menuState={menuState}
+        setSidebarState={setSidebarState}
+        setMenuState={setMenuState}
+      />
       <Sidebar
         menuState={menuState}
         sidebarState={sidebarState}
         setSidebarState={setSidebarState}
+        setMenuState={setMenuState}
       />
       <Hero />
       <Promo />
+      <Statistics />
+      <About />
+      <Layanan />
+      <Popular />
+      <Testimoni />
+      <Plan />
+      <Footer />
+      <Footnote />
     </>
   );
 }

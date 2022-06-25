@@ -4,6 +4,14 @@ import Button from "./Button";
 import Link from "next/link";
 
 export default function Navbar({ menuState, setMenuState, setSidebarState }) {
+  const menu = [
+    "home",
+    "promo",
+    "tentang",
+    "layanan",
+    "destinasi",
+    "testimoni",
+  ];
   return (
     <div className={style["navbar"]}>
       <div className={style["navbar-body"]}>
@@ -18,54 +26,29 @@ export default function Navbar({ menuState, setMenuState, setSidebarState }) {
           </a>
         </Link>
         <div className={style["menu"]}>
-          <Link href="#">
-            <a
-              className={`${style["menu-list"]} ${
-                menuState === "home" ? style["active"] : ""
-              }`}
-            >
-              Home
-            </a>
-          </Link>
-          <Link href="#">
-            <a
-              className={`${style["menu-list"]} ${
-                menuState === "promo" ? style["active"] : ""
-              }`}
-            >
-              Promo
-            </a>
-          </Link>
-          <Link href="#">
-            <a
-              className={`${style["menu-list"]} ${
-                menuState === "destinasi" ? style["active"] : ""
-              }`}
-            >
-              Destinasi
-            </a>
-          </Link>
-          <Link href="#">
-            <a
-              className={`${style["menu-list"]} ${
-                menuState === "layanan" ? style["active"] : ""
-              }`}
-            >
-              Layanan
-            </a>
-          </Link>
-          <Link href="#">
-            <a
-              className={`${style["menu-list"]} ${
-                menuState === "tentang" ? style["active"] : ""
-              }`}
-            >
-              Tentang
-            </a>
-          </Link>
+          {menu.map((item, index) => (
+            <Link href={item === "home" ? "/" : `#${item}`} key={index}>
+              <a
+                className={`${style["menu-list"]} ${
+                  menuState === item ? style["active"] : ""
+                }`}
+                onClick={() => setMenuState(item)}
+              >
+                {item}
+              </a>
+            </Link>
+          ))}
         </div>
         <div className={style["navbar-cta-wrapper"]}>
-          <Button>Contact us</Button>
+          <Button
+            onClick={() => {
+              window.open(
+                "https://wa.me/6282189471427?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+              );
+            }}
+          >
+            Contact us
+          </Button>
           <a
             rel="noopener noreferrer"
             target="_blank"

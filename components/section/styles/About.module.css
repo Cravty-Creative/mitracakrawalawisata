@@ -1,63 +1,52 @@
-.promo-wrapper {
+.about {
   @apply
-  min-h-[100vh]
-  lg:min-h-[75vh]
-  max-w-[100vw]
-  pt-8
-  relative
+  min-h-[90vh]
   flex
+  justify-center
   items-center
-  bg-[url('/promo-pattern.svg')]
+  bg-[url('/about-pattern.svg')]
   bg-no-repeat
   bg-top
   bg-cover;
 }
 
-.promo {
+.content-wrapper {
   @apply
+  py-6
   container
-  h-full
+  w-full
   grid
   grid-cols-12
-  gap-4
 }
 
-.promo-title {
+.text-content {
   @apply
-  h-full
   col-span-12
-  text-center
-  lg:text-start
-  lg:col-span-4
+  lg:col-span-6
+  flex
+  flex-col
+  justify-center
+  lg:pr-6
+  mb-8
+  lg:mb-0
 }
 
-.promo-slider {
+.image-content {
   @apply
   relative
   col-span-12
-  lg:col-span-8
-  lg:mt-[-1rem]
-}
-
-.card {
-  @apply
-  rounded-2xl
-  p-4
-  shadow-lg
-  shadow-slate-700/10
   flex
-  flex-col
-  gap-3
-  bg-white;
+  items-center
+  lg:col-span-6
+  lg:mt-[-1rem]
 }
 
 .card-image {
   @apply
   relative
-  rounded-lg
+  rounded-2xl
   w-full
-  h-96
-  lg:h-64
+  h-[50vh]
   overflow-hidden;
 }
 
@@ -92,12 +81,38 @@
   right-0;
 }
 
-.promo-cta-wrapper {
+.visi-misi-wrapper {
+  @apply
+  grid
+  grid-cols-2
+  gap-6
+  mt-10
+}
+
+.visi, .misi {
+  @apply
+  col-span-2
+  xl:col-span-1
+}
+
+.title {
+  @apply
+  font-semibold
+  text-lg
+  mb-2
+}
+
+.visi-misi-list {
   @apply
   flex
-  items-center
-  justify-center
-  lg:justify-start
+  flex-col
+  gap-2
+  pl-2
+  pr-10
+}
+
+.list {
+  @apply
+  flex
   gap-4
-  mt-4;
 }

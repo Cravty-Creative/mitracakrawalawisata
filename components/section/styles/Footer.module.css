@@ -1,0 +1,66 @@
+.footer {
+  @apply
+  pt-80
+  bg-gray-100;
+}
+
+.footer-wrapper {
+  @apply
+  relative
+  container
+}
+
+.banner {
+  @apply
+  absolute
+  top-0
+  left-1/2
+  -translate-x-1/2
+  -translate-y-[33rem]
+  w-[80%]
+  bg-[url('/hero-pattern.svg')]
+  bg-no-repeat
+  bg-bottom
+  bg-cover
+  bg-fixed
+  border
+  shadow-xl
+  shadow-yellow-200/50
+  rounded-3xl
+  overflow-hidden
+}
+
+.glass {
+  background: radial-gradient( 100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100% );
+  box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
+  backdrop-filter: blur(42px);
+  @apply
+  p-10
+  lg:py-32
+  lg:px-20
+}
+
+.footer-content {
+  @apply
+  lg:py-10
+  grid
+  grid-cols-12
+}
+
+.footer-1 {
+  @apply
+  col-span-12
+  lg:col-span-6
+  flex
+  flex-col
+  gap-2
+}
+.footer-2, .footer-3, .footer-4 {
+  @apply
+  col-span-12
+  lg:col-span-2
+  pt-4
+  flex
+  flex-col
+  gap-2
+}
