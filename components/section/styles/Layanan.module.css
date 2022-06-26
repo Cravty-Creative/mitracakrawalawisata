@@ -1,9 +1,9 @@
 .layanan {
   @apply
   min-h-[92vh]
-  bg-[url('/about-pattern.svg')]
+  bg-[url('/layanan-pattern.svg')]
   bg-no-repeat
-  bg-top
+  bg-bottom
   bg-cover
   pt-28;
 }

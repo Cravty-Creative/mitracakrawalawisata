@@ -16,7 +16,11 @@ export default function Footer() {
               we will provide the best offer for you and we will also provide
               the best recommendations for you
             </h2>
-            <Button className="mt-20">Lets Discover</Button>
+            <Link href="#layanan">
+              <a>
+                <Button className="mt-20">Lets Discover</Button>
+              </a>
+            </Link>
           </div>
         </div>
         <div className={style["footer-content"]}>
@@ -35,7 +39,7 @@ export default function Footer() {
               Jl Raya Jatiwaringin No 9A Pondok Gede, Bekasi - Jawa Barat 17411
             </div>
             <a
-              href="https://wa.me/6282189471427?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+              href="https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
               target="_blank"
               rel="noopener noreferrer"
             >

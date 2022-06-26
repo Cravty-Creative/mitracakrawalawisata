@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { useState, useLayoutEffect } from "react";
+import Link from 'next/link'
 
 export default function Promo() {
   const [slides, setSlides] = useState(2);
@@ -52,11 +53,15 @@ export default function Promo() {
             </div>
             <div>Dapatkan paket perjalanan dengan harga promo</div>
             <div className={style["promo-cta-wrapper"]}>
-              <Button>Pesan Sekarang</Button>
+            <Link href="#layanan">
+              <a>
+                <Button className={style["btn-cta-hero"]}>Pesan Sekarang</Button>
+              </a>
+            </Link>
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://wa.me/6282189471427?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+                href="https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
                 className={style["link-to-center"]}
                 data-tooltip="Start chat"
                 data-flow="right"

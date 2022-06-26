@@ -1,6 +1,6 @@
 .plan {
   @apply
-  lg:min-h-[100vh]
+  lg:min-h-[150vh]
   min-h-[120vh]
   bg-[url('/about-pattern.svg')]
   bg-no-repeat
