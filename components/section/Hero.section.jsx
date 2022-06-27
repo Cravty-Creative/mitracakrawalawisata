@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero({ setModal }) {
   const [windowWidth, setWindowWidth] = useState(null);
 
   useEffect(() => {
@@ -90,7 +90,20 @@ export default function Hero() {
                   <h2 className="font-bold text-3xl mb-2">
                     29.000 <span className="font-light text-lg"> .000</span>
                   </h2>
-                  <Button className="w-full">Take Deals</Button>
+                  <Button
+                    className="w-full"
+                    onClick={() => {
+                      setModal({
+                        isOpen: true,
+                        photo: "/mecca-hero.jpg",
+                        title: "Paket Umrah 12 Hari",
+                        price: "IDR 29,000,000",
+                        desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
+                      });
+                    }}
+                  >
+                    Take Deals
+                  </Button>
                 </div>
               </div>
               <div
@@ -101,31 +114,45 @@ export default function Hero() {
               >
                 <div className={style["card-2"]}>
                   <h4 className="text-center mb-1">Another offers</h4>
-                  <button className={style["another-offers"]}>
-                    <h2 className="font-bold">Liburan Berkah 1</h2>
-                    <div className="flex gap-2 items-center">
-                      <Image
-                        src="/location.svg"
-                        alt="loc"
-                        height={18}
-                        width={18}
-                      />
-                      <span className="text-xs">Istanbul, Turki</span>
-                    </div>
-                  </button>
-                  <button className={style["another-offers"]}>
-                    <h2 className="font-bold">Liburan Berkah 2</h2>
-                    <div className="flex gap-2 items-center">
-                      <Image
-                        src="/location.svg"
-                        alt="loc"
-                        height={18}
-                        width={18}
-                      />
-                      <span className="text-xs">Dubai, Uni Emirat Arab</span>
-                    </div>
-                  </button>
-                  <Button className="w-full">See More Offers</Button>
+                  <Link href="#destinasi">
+                    <a>
+                      <button className={style["another-offers"]}>
+                        <h2 className="font-bold">Liburan Berkah 1</h2>
+                        <div className="flex gap-2 items-center">
+                          <Image
+                            src="/location.svg"
+                            alt="loc"
+                            height={18}
+                            width={18}
+                          />
+                          <span className="text-xs">Istanbul, Turki</span>
+                        </div>
+                      </button>
+                    </a>
+                  </Link>
+                  <Link href="#destinasi">
+                    <a>
+                      <button className={style["another-offers"]}>
+                        <h2 className="font-bold">Liburan Berkah 2</h2>
+                        <div className="flex gap-2 items-center">
+                          <Image
+                            src="/location.svg"
+                            alt="loc"
+                            height={18}
+                            width={18}
+                          />
+                          <span className="text-xs">
+                            Dubai, Uni Emirat Arab
+                          </span>
+                        </div>
+                      </button>
+                    </a>
+                  </Link>
+                  <Link href="#destinasi">
+                    <a>
+                      <Button className="w-full">See More Offers</Button>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

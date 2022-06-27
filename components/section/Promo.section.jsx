@@ -8,9 +8,9 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { useState, useLayoutEffect } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
-export default function Promo() {
+export default function Promo({ setModal }) {
   const [slides, setSlides] = useState(2);
 
   useLayoutEffect(() => {
@@ -31,14 +31,32 @@ export default function Promo() {
     return () => window.removeEventListener("resize", updateSlides);
   }, []);
 
-  const cardImageUrl = {
-    "paket-1": "/paket-1.png",
-    "paket-2": "/paket-2.png",
-    "paket-3": "/paket-3.png",
-    "paket-4": "/paket-4.png",
-    "paket-5": "/paket-5.png",
-    "paket-6": "/paket-6.png",
-  };
+  const cardImageUrl = [
+    {
+      title: "Umroh Berkah",
+      price: "27,500,000",
+      desc: "Saudia Airlines dengan Nozol Hotel IN program selama 9 Hari",
+      photo: "/paket-",
+    },
+    {
+      title: "Umroh Berkah",
+      price: "27,500,000",
+      desc: "Saudia Airlines dengan Nozol Hotel IN program selama 9 Hari",
+      photo: "/paket-",
+    },
+    {
+      title: "Umroh Berkah",
+      price: "27,500,000",
+      desc: "Saudia Airlines dengan Nozol Hotel IN program selama 9 Hari",
+      photo: "/paket-",
+    },
+    {
+      title: "Umroh Berkah",
+      price: "27,500,000",
+      desc: "Saudia Airlines dengan Nozol Hotel IN program selama 9 Hari",
+      photo: "/paket-",
+    },
+  ];
   return (
     <>
       <div className={style["promo-wrapper"]} id="promo">
@@ -53,11 +71,13 @@ export default function Promo() {
             </div>
             <div>Dapatkan paket perjalanan dengan harga promo</div>
             <div className={style["promo-cta-wrapper"]}>
-            <Link href="#layanan">
-              <a>
-                <Button className={style["btn-cta-hero"]}>Pesan Sekarang</Button>
-              </a>
-            </Link>
+              <Link href="#layanan">
+                <a>
+                  <Button className={style["btn-cta-hero"]}>
+                    Pesan Sekarang
+                  </Button>
+                </a>
+              </Link>
               <a
                 rel="noopener noreferrer"
                 target="_blank"
@@ -97,18 +117,28 @@ export default function Promo() {
               modules={[Autoplay, Pagination, Navigation]}
               style={{ padding: "1.2rem" }}
             >
-              {Object.keys(cardImageUrl || []).map((item, index) => (
+              {(cardImageUrl || []).map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className={style["card"]}>
+                  <a
+                    className={style["card"]}
+                    onClick={() => {
+                      setModal({
+                        isOpen: true,
+                        photo: `${item.photo}${index + 1}.png`,
+                        price: item.price,
+                        title: item.title,
+                        desc: item.desc,
+                      });
+                    }}
+                  >
                     <div className={style["card-image"]}>
                       <Image
-                        src={cardImageUrl[item]}
+                        src={`${item.photo}${index + 1}.png`}
                         alt="card-1"
                         layout="fill"
-                        // objectFit="cover"
                       />
                     </div>
-                  </div>
+                  </a>
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -1,15 +1,7 @@
 import Image from "next/image";
 import style from "./styles/Popular.module.css";
 
-export default function Popular() {
-  // const cardPopular = [
-  //   "Umroh ke Tanah Suci",
-  //   "Explore Turkey",
-  //   "Explore Mesir",
-  //   "Explore Malaysia",
-  //   "Explore Singapore",
-  //   "Explore Yordania",
-  // ];
+export default function Popular({ setModal }) {
   const dataPopular = [
     {
       title: "Umroh ke Tanah Suci",
@@ -64,7 +56,19 @@ export default function Popular() {
         </div>
         <div className={style["card-wrapper"]}>
           {dataPopular.map((item, index) => (
-            <div className={style["card"]} key={index}>
+            <abbr
+              className={style["card"]}
+              key={index}
+              onClick={() => {
+                setModal({
+                  isOpen: true,
+                  photo: item.img,
+                  title: item.title,
+                  price: item.price,
+                  desc: item.location,
+                });
+              }}
+            >
               <div className={style["image-wrapper"]}>
                 <Image
                   src={item.img}
@@ -80,7 +84,7 @@ export default function Popular() {
               </div>
               <span className="text-xl font-semibold">{item.title}</span>
               <span>{item.location}</span>
-            </div>
+            </abbr>
           ))}
         </div>
       </div>

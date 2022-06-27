@@ -14,8 +14,17 @@ import Testimoni from "../components/section/Testimoni.section";
 import Plan from "../components/section/Plan.section";
 import Footer from "../components/section/Footer.section";
 import Footnote from "../components/section/Footnote.section";
+import Modal from "../components/Modal";
 
 export default function Home() {
+  const [modal, setModal] = useState({
+    isOpen: false,
+    photo: null,
+    title: null,
+    desc: null,
+    price: null,
+  });
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -40,16 +49,17 @@ export default function Home() {
         setSidebarState={setSidebarState}
         setMenuState={setMenuState}
       />
-      <Hero />
-      <Promo />
+      <Hero setModal={setModal} />
+      <Promo setModal={setModal} />
       <Statistics />
       <About />
-      <Layanan />
-      <Popular />
+      <Layanan setModal={setModal} />
+      <Popular setModal={setModal} />
       <Testimoni />
       <Plan />
       <Footer />
       <Footnote />
+      <Modal modal={modal} setModal={setModal} />
     </>
   );
 }

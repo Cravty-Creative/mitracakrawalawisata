@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./styles/Layanan.module.css";
 import { useEffect, useState } from "react";
 
-export default function Layanan() {
+export default function Layanan({ setModal }) {
   const [windowWidth, setWindowWidth] = useState(null);
 
   useEffect(() => {
@@ -13,21 +13,25 @@ export default function Layanan() {
   const dataLayanan = [
     {
       title: "Paket Umrah",
+      price: "Contact Us",
       img: "/mecca-night.jpg",
       desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
     },
     {
       title: "Paket Wisata Halal",
+      price: "Contact Us",
       img: "/istanbul.jpg",
       desc: "Wisata Halal dengan destinasi negara timur tengah",
     },
     {
       title: "Visa",
+      price: "Contact Us",
       img: "/visa.png",
       desc: "Memberikan kemudahan pengurusan Visa untuk kebutuhan wisata anda",
     },
     {
       title: "Passport",
+      price: "Contact Us",
       img: "/passport.png",
       desc: "Memudahkan pengurusan passport dengan harga yang terjangkau",
     },
@@ -42,12 +46,21 @@ export default function Layanan() {
         </h2>
         <div className={style["card-wrapper"]}>
           {dataLayanan.map((item, index) => (
-            <div
+            <a
               className={style["card"]}
               key={index}
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-delay={windowWidth > 1080 ? 800 * index : false}
+              onClick={() => {
+                setModal({
+                  isOpen: true,
+                  photo: item.img,
+                  price: item.price,
+                  title: item.title,
+                  desc: item.desc,
+                });
+              }}
             >
               <div className={style["image-wrapper"]}>
                 <Image
@@ -59,7 +72,7 @@ export default function Layanan() {
               </div>
               <div className="font-semibold text-lg">{item.title}</div>
               <div className="text-center">{item.desc}</div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

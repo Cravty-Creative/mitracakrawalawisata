@@ -42,13 +42,13 @@
 .card {
   @apply
   rounded-2xl
-  /* p-4 */
   shadow-lg
   shadow-slate-700/10
   flex
   flex-col
   gap-3
-  bg-white;
+  bg-white
+  cursor-pointer;
 }
 
 .card-image {

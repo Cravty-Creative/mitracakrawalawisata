@@ -42,7 +42,8 @@
   hover:shadow-xl
   hover:shadow-green-400/20
   hover:scale-105
-  motion-safe:hover:duration-500;
+  motion-safe:hover:duration-500
+  cursor-pointer;
 }
 
 .image-wrapper {
