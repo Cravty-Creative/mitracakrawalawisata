@@ -32,7 +32,15 @@ export default function Modal({ modal, setModal }) {
               <span className="font-bold text-2xl">IDR {modal.price}</span>
             </div>
             <span>{modal.desc}</span>
-            <Button>Pesan Sekarang</Button>
+            <Button
+              onClick={() => {
+                window.open(
+                  "https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+                );
+              }}
+            >
+              Pesan Sekarang
+            </Button>
           </div>
         </div>
       </div>

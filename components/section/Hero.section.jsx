@@ -97,7 +97,7 @@ export default function Hero({ setModal }) {
                         isOpen: true,
                         photo: "/mecca-hero.jpg",
                         title: "Paket Umrah 12 Hari",
-                        price: "IDR 29,000,000",
+                        price: "29,000,000",
                         desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
                       });
                     }}
