@@ -36,14 +36,14 @@ export default function Footer() {
               </a>
             </Link>
             <div className="w-1/2 mt-2">
-              Jl Raya Jatiwaringin No 9A Pondok Gede, Bekasi - Jawa Barat 17411
+              Jl South City Barat Blok B1-17 Pondok Cabe Udik Pamulang Tangerang Selatan 15418
             </div>
             <a
               href="https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
               target="_blank"
               rel="noopener noreferrer"
             >
-              0821-8947-1427
+              0821-8947-1527
             </a>
             <a
               href="mailto:admin@mitracakrawalawisata.com"
