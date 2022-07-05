@@ -45,12 +45,7 @@ export default function Popular({ setModal }) {
       <div className={style["popular-wrapper"]}>
         <div className={style["header"]}>
           <h1 className="font-semibold text-2xl">Our Popular Products</h1>
-          <a
-            href="javascript:void"
-            rel="noopener noreferrer"
-            data-tooltip="more product"
-            data-flow="top"
-          >
+          <a href="#plan" rel="noopener noreferrer" data-tooltip="more product" data-flow="top">
             See more
           </a>
         </div>
@@ -70,16 +65,9 @@ export default function Popular({ setModal }) {
               }}
             >
               <div className={style["image-wrapper"]}>
-                <Image
-                  src={item.img}
-                  alt="card"
-                  layout="fill"
-                  className="object-cover"
-                />
+                <Image src={item.img} alt="card" layout="fill" className="object-cover" />
                 <div className={style["overlay"]}>
-                  <span className="text-white font-semibold text-2xl">
-                    {item.price}
-                  </span>
+                  <span className="text-white font-semibold text-2xl">{item.price}</span>
                 </div>
               </div>
               <span className="text-xl font-semibold">{item.title}</span>

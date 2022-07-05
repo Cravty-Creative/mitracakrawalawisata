@@ -35,7 +35,7 @@ export default function Plan() {
     },
   ];
   return (
-    <div className={style["plan"]}>
+    <div className={style["plan"]} id="plan">
       <div className={style["plan-wrapper"]}>
         <h2>Choose the Plan</h2>
         <h1 className="font-semibold text-4xl text-center">Worship to the Holy Land of Mecca</h1>
