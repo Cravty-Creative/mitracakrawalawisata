@@ -38,15 +38,11 @@ export default function Plan() {
     <div className={style["plan"]}>
       <div className={style["plan-wrapper"]}>
         <h2>Choose the Plan</h2>
-        <h1 className="font-semibold text-4xl text-center">
-          Worship to the Holy Land of Mecca
-        </h1>
+        <h1 className="font-semibold text-4xl text-center">Worship to the Holy Land of Mecca</h1>
         <div className={style["card-wrapper"]}>
           {(cardContent || []).map((item, index) => (
             <div
-              className={`${style["card"]} ${
-                index === 1 ? style["middle"] : ""
-              }`}
+              className={`${style["card"]} ${index === 1 ? style["middle"] : ""}`}
               key={index}
               data-aos="flip-left"
               data-aos-duration="500"
@@ -65,7 +61,13 @@ export default function Plan() {
                   ))}
                 </div>
               </div>
-              <Button>Get Started</Button>
+              <Button
+                onClick={() => {
+                  window.open("https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel");
+                }}
+              >
+                Contact Us
+              </Button>
             </div>
           ))}
         </div>
@@ -96,40 +98,29 @@ export default function Plan() {
                     <span>Features</span>
                     <div className="flex flex-col gap-3">
                       {(item.features || []).map((feature, indexFeature) => (
-                        <div
-                          className="flex gap-3 items-center"
-                          key={indexFeature}
-                        >
+                        <div className="flex gap-3 items-center" key={indexFeature}>
                           <div className={style["dot"]}></div>
                           <span>{feature}</span>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <Button>Get Started</Button>
+                  <Button
+                    onClick={() => {
+                      window.open("https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel");
+                    }}
+                  >
+                    Contact Us
+                  </Button>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-          <button
-            className={`${style["btn-chevron"]} ${style["btn-chevron-prev"]} plan-btn-prev`}
-          >
-            <Image
-              src="/chevron-left.svg"
-              alt="btn-left"
-              width={24}
-              height={24}
-            />
+          <button className={`${style["btn-chevron"]} ${style["btn-chevron-prev"]} plan-btn-prev`}>
+            <Image src="/chevron-left.svg" alt="btn-left" width={24} height={24} />
           </button>
-          <button
-            className={`${style["btn-chevron"]} ${style["btn-chevron-next"]} plan-btn-next`}
-          >
-            <Image
-              src="/chevron-right.svg"
-              alt="btn-left"
-              width={24}
-              height={24}
-            />
+          <button className={`${style["btn-chevron"]} ${style["btn-chevron-next"]} plan-btn-next`}>
+            <Image src="/chevron-right.svg" alt="btn-left" width={24} height={24} />
           </button>
         </div>
       </div>
