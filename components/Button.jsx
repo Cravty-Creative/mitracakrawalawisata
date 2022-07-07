@@ -1,22 +1,17 @@
 import style from "./styles/Button.module.css";
 
-export default function Button({
-  variant = "primary",
-  type = "button",
-  children = "Button",
-  onClick,
-  className,
-}) {
+export default function Button({ variant = "primary", type = "button", children = "Button", onClick, className }) {
   switch (variant) {
     case "primary":
       return (
-        <button
-          className={`${style["primary"]} ${style["btn"]} ${
-            className ? className : ""
-          }`}
-          type={type}
-          onClick={onClick}
-        >
+        <button className={`${style["primary"]} ${style["btn"]} ${className ? className : ""}`} type={type} onClick={onClick}>
+          {children}
+        </button>
+      );
+
+    case "secondary":
+      return (
+        <button className={`${style["secondary"]} ${style["btn"]} ${className ? className : ""}`} type={type} onClick={onClick}>
           {children}
         </button>
       );

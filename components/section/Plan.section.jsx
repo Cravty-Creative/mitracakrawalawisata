@@ -7,16 +7,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { useEffect, useState } from "react";
 
 export default function Plan() {
-  const [windowWidth, setWindowWidth] = useState(null);
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
-  }, []);
-
   const cardContent = [
     {
       title: "Umrah",
@@ -41,13 +33,7 @@ export default function Plan() {
         <h1 className="font-semibold text-4xl text-center">Worship to the Holy Land of Mecca</h1>
         <div className={style["card-wrapper"]}>
           {(cardContent || []).map((item, index) => (
-            <div
-              className={`${style["card"]} ${index === 1 ? style["middle"] : ""}`}
-              key={index}
-              data-aos="flip-left"
-              data-aos-duration="500"
-              data-aos-delay={windowWidth > 1080 ? 800 * index : false}
-            >
+            <div className={`${style["card"]} ${index === 1 ? style["middle"] : ""}`} key={index} data-aos="flip-left" data-aos-duration="500" data-aos-delay={800}>
               <div className="flex flex-col gap-6 items-center">
                 <span className="font-semibold text-lg">{item.title}</span>
                 <span className="font-bold text-2xl">IDR {item.price}</span>

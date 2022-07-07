@@ -1,12 +1,14 @@
 .btn {
   @apply
-  py-2
+  py-1.5
   px-5
   rounded-xl
   shadow-lg
   motion-safe:hover:duration-300
   focus:scale-95
-  lg:hover:translate-y-[-.3rem];
+  lg:hover:translate-y-[-.3rem]
+  border-2
+  border-transparent;
 }
 
 .primary {
@@ -14,4 +16,10 @@
   bg-slate-800
   text-white
   shadow-slate-800/20;
+}
+
+.secondary {
+  @apply
+  border-2
+  border-slate-700
 }
