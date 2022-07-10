@@ -15,6 +15,7 @@ import Plan from "../components/section/Plan.section";
 import Footer from "../components/section/Footer.section";
 import Footnote from "../components/section/Footnote.section";
 import Modal from "../components/Modal";
+import Gallery from "../components/section/Gallery.section";
 
 export default function Home() {
   const [modal, setModal] = useState({
@@ -55,6 +56,7 @@ export default function Home() {
       <About />
       <Layanan setModal={setModal} />
       <Popular setModal={setModal} />
+      <Gallery />
       <Testimoni />
       <Plan />
       <Footer />

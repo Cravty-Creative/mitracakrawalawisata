@@ -1,5 +1,5 @@
 .testimoni {
-  @apply py-52 min-h-[40vh] bg-[url('/about-pattern.svg')] bg-no-repeat bg-top bg-cover;
+  @apply pt-32 pb-52 min-h-[40vh] bg-[url('/about-pattern.svg')] bg-no-repeat bg-top bg-cover;
 }
 
 .header {

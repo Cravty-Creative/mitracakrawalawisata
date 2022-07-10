@@ -1,0 +1,79 @@
+.bg-galery {
+  @apply
+  bg-[url('/bg-galery.jpg')]
+  bg-no-repeat
+  bg-top
+  bg-fixed
+  bg-cover
+  min-h-[120vh]
+  w-screen
+}
+
+.galery {
+  @apply
+  w-full
+  min-h-[120vh]
+  relative
+  pt-20
+  pb-32
+  ;
+  background: radial-gradient( 100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100% );
+  box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
+  backdrop-filter: blur(42px)
+}
+
+.title {
+  @apply
+  w-full
+  h-full
+  flex
+  flex-col
+  gap-4
+  items-center;
+}
+
+.content {
+  @apply
+  absolute
+  top-1/3
+  -translate-y-1/2
+  left-0
+  w-full
+  h-full
+  flex
+  justify-between
+  items-end
+}
+
+.slide-one, .slide-two, .slide-three, .slide-four {
+  @apply
+  hover:scale-105
+  motion-safe:duration-200
+}
+
+.slide-one {
+  @apply
+  w-[20vw]
+  h-[50vh]
+  -translate-y-11
+}
+
+.slide-two {
+  @apply
+  h-[40vh]
+  w-[18vw]
+  translate-y-8
+}
+
+.slide-three {
+  @apply
+  h-[45vh]
+  w-[20vw]
+}
+
+.slide-four {
+  @apply
+  h-[65vh]
+  w-[20vw]
+  -translate-y-6
+}
