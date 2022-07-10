@@ -11,33 +11,33 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 export default function Plan() {
   const cardContent = [
     {
-      title: "Umrah",
-      price: "29,000,000",
+      title: "Umrah Special Promo",
+      price: "12,000",
       features: ["Transportation", "Food", "Hotel", "Tour Guide"],
     },
     {
-      title: "Umrah",
-      price: "29,000,000",
+      title: "Umrah Executive",
+      price: "24,000",
       features: ["Transportation", "Food", "Hotel", "Tour Guide"],
     },
     {
-      title: "Umrah",
-      price: "29,000,000",
+      title: "Haji Tanpa Antri",
+      price: "33,000",
       features: ["Transportation", "Food", "Hotel", "Tour Guide"],
     },
   ];
   return (
     <div className={style["plan"]} id="plan">
       <div className={style["plan-wrapper"]}>
-        <h2>Choose the Plan</h2>
-        <h1 className="font-semibold text-4xl text-center">Worship to the Holy Land of Mecca</h1>
+        <h2>Pilih Rencana Perjalanan Anda</h2>
+        <h1 className="font-semibold text-4xl text-center">Ibadah ke Tanah Suci Mekkah</h1>
         <div className={style["card-wrapper"]}>
           {(cardContent || []).map((item, index) => (
             <div className={`${style["card"]} ${index === 1 ? style["middle"] : ""}`} key={index} data-aos="flip-left" data-aos-duration="500" data-aos-delay={800}>
               <div className="flex flex-col gap-6 items-center">
                 <span className="font-semibold text-lg">{item.title}</span>
-                <span className="font-bold text-2xl">IDR {item.price}</span>
-                <span>Features</span>
+                <span className="font-bold text-2xl">$ {item.price}</span>
+                <span>Fasilitas</span>
                 <div className="flex flex-col gap-3">
                   {(item.features || []).map((feature, indexFeature) => (
                     <div className="flex gap-3 items-center" key={indexFeature}>
@@ -49,7 +49,7 @@ export default function Plan() {
               </div>
               <Button
                 onClick={() => {
-                  window.open("https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel");
+                  window.open("https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya");
                 }}
               >
                 Contact Us
@@ -80,7 +80,7 @@ export default function Plan() {
                 <div className={style["card"]} key={index}>
                   <div className="flex flex-col gap-6 items-center">
                     <span className="font-semibold text-lg">{item.title}</span>
-                    <span className="font-bold text-2xl">IDR {item.price}</span>
+                    <span className="font-bold text-2xl">USD {item.price}</span>
                     <span>Features</span>
                     <div className="flex flex-col gap-3">
                       {(item.features || []).map((feature, indexFeature) => (
@@ -93,7 +93,7 @@ export default function Plan() {
                   </div>
                   <Button
                     onClick={() => {
-                      window.open("https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel");
+                      window.open("https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya");
                     }}
                   >
                     Contact Us

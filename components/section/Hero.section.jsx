@@ -44,10 +44,10 @@ export default function Hero({ setModal }) {
               >
                 <div className={style["card-1"]}>
                   <h4 className=" text-green-800 font-semibold mb-2">
-                    Destination
+                    Destinasi
                   </h4>
                   <h2 className="font-bold text-lg mb-1">
-                    Paket Umrah 12 Hari
+                    Paket Haji ke Tanah Suci
                   </h2>
                   <div className="flex gap-2 items-center">
                     <Image
@@ -86,9 +86,9 @@ export default function Hero({ setModal }) {
                 data-aos-duration={windowWidth > 1023 ? "1000" : "500"}
               >
                 <div className={style["card-1"]}>
-                  <h4 className="font-semibold">Deals</h4>
+                  <h4 className="font-semibold">Penawaran</h4>
                   <h2 className="font-bold text-3xl mb-2">
-                    29.000 <span className="font-light text-lg"> .000</span>
+                    $12k <span className="font-light text-lg"> ~ $33k</span>
                   </h2>
                   <Button
                     className="w-full"
@@ -96,13 +96,14 @@ export default function Hero({ setModal }) {
                       setModal({
                         isOpen: true,
                         photo: "/mecca-hero.jpg",
-                        title: "Paket Umrah 12 Hari",
-                        price: "29,000,000",
-                        desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
+                        className: "object-cover",
+                        title: "Paket Haji ke Tanah Suci",
+                        price: "$12k ~ $33k",
+                        desc: "Paket Haji terbaik kami dengan harga terjangkau dan fasilitas mewah",
                       });
                     }}
                   >
-                    Take Deals
+                    Ambil
                   </Button>
                 </div>
               </div>
@@ -113,7 +114,7 @@ export default function Hero({ setModal }) {
                 data-aos-duration={windowWidth > 1023 ? "1000" : "500"}
               >
                 <div className={style["card-2"]}>
-                  <h4 className="text-center mb-1">Another offers</h4>
+                  <h4 className="text-center mb-1">Penawaran lain</h4>
                   <Link href="#destinasi">
                     <a>
                       <button className={style["another-offers"]}>
@@ -150,7 +151,7 @@ export default function Hero({ setModal }) {
                   </Link>
                   <Link href="#destinasi">
                     <a>
-                      <Button className="w-full">See More Offers</Button>
+                      <Button className="w-full">Penawaran Lainnya</Button>
                     </a>
                   </Link>
                 </div>
@@ -162,7 +163,7 @@ export default function Hero({ setModal }) {
           <div className={style["mouse-animation"]}>
             <div className={style["dot"]}></div>
           </div>
-          <div>Scroll for more</div>
+          <div>geser untuk selengkapnya</div>
         </div>
       </div>
     </div>

@@ -15,18 +15,26 @@ export default function Modal({ modal, setModal }) {
             <Image src="/x.svg" alt="close" width={24} height={24} />
           </button>
           <div className={style["modal-image"]}>
-            <Image src={modal.photo ? modal.photo : "/mecca-hero.jpg"} alt="modal image" layout="fill" className="object-cover" />
+            <Image 
+              src={modal.photo ? modal.photo : "/mecca-hero.jpg"} 
+              alt="modal image" 
+              layout="fill" 
+              className={modal.className ? modal.className : ""} 
+            />
           </div>
           <div className={style["modal-desc"]}>
             <h1 className="font-semibold text-xl pr-8">{modal.title}</h1>
             <div className="flex flex-col gap-1">
-              <span className="font-sm">Price</span>
-              <span className="font-bold text-2xl">{modal.price.toLowerCase() === "contact sales" || modal.price.toLowerCase() === "contact us" ? modal.price : "IDR " + modal.price}</span>
+              <span className="font-sm">Harga</span>
+              <span className="font-bold text-2xl">{
+                // modal.price.toLowerCase() === "contact sales" || modal.price.toLowerCase() === "contact us" ? modal.price : "IDR " + modal.price
+                modal.price
+              }</span>
             </div>
             <span>{modal.desc}</span>
             <Button
               onClick={() => {
-                window.open("https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel");
+                window.open("https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya");
               }}
             >
               Pesan Sekarang

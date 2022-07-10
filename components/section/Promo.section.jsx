@@ -56,6 +56,18 @@ export default function Promo({ setModal }) {
       desc: "Turkish Airlines dengan Hotel bintang 5 di Mileniumal Aqeeq di Madinah, Swiss Al-Maqom di Mekkah & Radison Blu di Istanbul program selama 12 Hari",
       photo: "/paket-",
     },
+    {
+      title: "Umroh Exlcusive",
+      price: "By Request",
+      desc: "Paket umroh exlcusive dengan harga, fasilitas, dan maskapai sesuai permintaan anda",
+      photo: "/paket-",
+    },
+    {
+      title: "Umroh VVIP",
+      price: "55,500,000",
+      desc: "Saudi Airlines (Business Class) dengan Hotel bintang 5 di Mileniumal Aqeeq di Madinah & Swiss Al-Maqom di Mekkah program selama 9 Hari",
+      photo: "/paket-",
+    },
   ];
   return (
     <>
@@ -67,9 +79,17 @@ export default function Promo({ setModal }) {
             className={style["promo-title"]}
           >
             <div className="font-semibold text-5xl mb-4">
-              Promo terbatas untuk anda
+              Special Promo Untuk Anda
             </div>
-            <div>Dapatkan paket perjalanan dengan harga promo</div>
+            <div>
+              Dapatkan paket perjalanan mewah dengan harga terbaik hanya di  <span>
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={16}
+                height={16}
+              />
+              </span><b>  Mitra Cakrawala Wisata</b></div>
             <div className={style["promo-cta-wrapper"]}>
               <Link href="#layanan">
                 <a>
@@ -81,9 +101,9 @@ export default function Promo({ setModal }) {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+                href="https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya"
                 className={style["link-to-center"]}
-                data-tooltip="Start chat"
+                data-tooltip="Mulai percakapan"
                 data-flow="right"
               >
                 <Image

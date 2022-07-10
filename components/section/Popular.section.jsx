@@ -4,9 +4,9 @@ import style from "./styles/Popular.module.css";
 export default function Popular({ setModal }) {
   const dataPopular = [
     {
-      title: "Umroh ke Tanah Suci",
+      title: "Haji ke Tanah Suci",
       img: "/mecca-1.jpg",
-      price: "Start From 27,5 Jt",
+      price: "Start From USD 12k",
       location: "Mekkah - Madinah, Saudi Arabia",
     },
     {
@@ -44,9 +44,9 @@ export default function Popular({ setModal }) {
     <div className={style["popular"]} id="destinasi">
       <div className={style["popular-wrapper"]}>
         <div className={style["header"]}>
-          <h1 className="font-semibold text-2xl">Our Popular Products</h1>
-          <a href="#plan" rel="noopener noreferrer" data-tooltip="more product" data-flow="top">
-            See more
+          <h1 className="font-semibold text-2xl">Destinasi Terbaik Kami</h1>
+          <a href="#plan" rel="noopener noreferrer" data-tooltip="lihat selengkapnya" data-flow="top">
+            Selengkapnya
           </a>
         </div>
         <div className={style["card-wrapper"]}>
@@ -58,6 +58,7 @@ export default function Popular({ setModal }) {
                 setModal({
                   isOpen: true,
                   photo: item.img,
+                  className: "object-cover",
                   title: item.title,
                   price: item.price,
                   desc: item.location,

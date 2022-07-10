@@ -62,7 +62,7 @@ export default function Sidebar({
             <Button
               onClick={() => {
                 window.open(
-                  "https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+                  "https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya"
                 );
               }}
             >
@@ -71,7 +71,7 @@ export default function Sidebar({
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel"
+              href="https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya"
               className={style["link-to-center"]}
               data-tooltip="Start chat"
               data-flow="right"
