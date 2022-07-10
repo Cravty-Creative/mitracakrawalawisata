@@ -15,11 +15,10 @@
   min-h-[120vh]
   relative
   pt-20
-  pb-32
-  ;
+  pb-32;
   background: radial-gradient( 100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100% );
   box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
-  backdrop-filter: blur(42px)
+  backdrop-filter: blur(42px);
 }
 
 .title {
@@ -41,11 +40,12 @@
   w-full
   h-full
   flex
-  justify-between
+  justify-center
+  lg:justify-between
   items-end
 }
 
-.slide-one, .slide-two, .slide-three, .slide-four {
+.slide-one, .slide-two, .slide-three {
   @apply
   hover:scale-105
   motion-safe:duration-200
@@ -53,7 +53,9 @@
 
 .slide-one {
   @apply
-  w-[20vw]
+  hidden
+  lg:block
+  w-[24vw]
   h-[50vh]
   -translate-y-11
 }
@@ -61,19 +63,62 @@
 .slide-two {
   @apply
   h-[40vh]
-  w-[18vw]
-  translate-y-8
+  w-[90vw]
+  lg:w-[40vw]
+  -translate-y-24
 }
 
 .slide-three {
   @apply
-  h-[45vh]
-  w-[20vw]
+  hidden
+  lg:block
+  h-[65vh]
+  w-[22vw]
+  -translate-y-6
 }
 
-.slide-four {
+.overlay {
   @apply
-  h-[65vh]
-  w-[20vw]
-  -translate-y-6
+  absolute
+  h-full
+  w-full
+  flex
+  flex-col
+  gap-4
+  justify-center
+  items-center
+  text-white
+  font-semibold
+  text-2xl
+  z-10
+}
+
+.overlay-click {
+  @apply
+  hidden
+  text-base
+  text-white
+  font-light
+  border
+  border-white
+  rounded-lg
+  px-2
+  py-1
+  cursor-pointer;
+  background: radial-gradient( 100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100% );
+  box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
+  backdrop-filter: blur(42px);
+}
+
+:is(.slide-one, .slide-two, .slide-three):hover .overlay {
+  @apply
+  bg-gradient-to-b
+  from-transparent
+  to-black/70
+  before:content-['Lihat_Foto']
+}
+
+:is(.slide-one, .slide-two, .slide-three):hover .overlay-click {
+  @apply
+  block
 }

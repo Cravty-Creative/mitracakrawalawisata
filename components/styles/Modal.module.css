@@ -27,9 +27,31 @@
   gap-8
 }
 
+.modal-body-galery {
+  @apply
+  relative
+  bg-white
+  p-8
+  rounded-xl
+  w-[95vw]
+  h-[95vw]
+  lg:h-[90vh]
+  lg:w-[80vw]
+}
+
+.modal-body-video {
+  @apply
+  relative
+  bg-white
+  
+  p-8
+  rounded-xl
+}
+
 .btn-close {
   @apply
   absolute
+  bg-white
   top-1/2
   translate-y-10
   lg:translate-y-0
@@ -49,6 +71,7 @@
   shadow-slate-800/20
   lg:shadow-none
   motion-safe:duration-150
+  z-50
 }
 
 .modal-image {
