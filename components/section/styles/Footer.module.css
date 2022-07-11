@@ -94,6 +94,12 @@
   flex-col
   gap-2;
 }
+.footer-1-social {
+  @apply
+  pt-4
+  flex-row
+  space-x-4;
+}
 .footer-2, .footer-3, .footer-4 {
   @apply
   col-span-12

@@ -12,26 +12,26 @@ export default function Layanan({ setModal }) {
 
   const dataLayanan = [
     {
-      title: "Paket Umrah",
-      price: "Contact Us",
+      title: "Paket Haji",
+      price: "$12k ~ $33k",
       img: "/mecca-night.jpg",
-      desc: "Paket Umroh terbaik kami dengan harga terjangkau dan fasilitas mewah",
+      desc: "Paket Haji terbaik kami dengan harga terjangkau dan fasilitas mewah",
     },
     {
       title: "Paket Wisata Halal",
-      price: "Contact Us",
+      price: "Hubungi kami",
       img: "/istanbul.jpg",
       desc: "Wisata Halal dengan destinasi negara timur tengah",
     },
     {
       title: "Visa",
-      price: "Contact Us",
+      price: "Hubungi kami",
       img: "/visa.png",
       desc: "Memberikan kemudahan pengurusan Visa untuk kebutuhan wisata anda",
     },
     {
       title: "Passport",
-      price: "Contact Us",
+      price: "Hubungi kami",
       img: "/passport.png",
       desc: "Memudahkan pengurusan passport dengan harga yang terjangkau",
     },
@@ -54,6 +54,7 @@ export default function Layanan({ setModal }) {
                 setModal({
                   isOpen: true,
                   photo: item.img,
+                  className: "object-cover",
                   price: item.price,
                   title: item.title,
                   desc: item.desc,

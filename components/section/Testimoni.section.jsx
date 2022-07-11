@@ -94,7 +94,7 @@ export default function Testimoni() {
     <div className={style["testimoni"]} id="testimoni">
       <div className={style["testimoni-wrapper"]}>
         <div className={style["header"]}>
-          <h1 className="font-semibold text-3xl">Customer Reviews</h1>
+          <h1 className="font-semibold text-3xl">Testimoni Pelanggan</h1>
           <div className="hidden lg:flex gap-2">
             <button className={`${style["btn-chevron"]} testimoni-btn-prev`}>
               <Image

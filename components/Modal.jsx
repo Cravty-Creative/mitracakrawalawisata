@@ -75,7 +75,7 @@ export default function Modal({ modal, setModal }) {
                 <span>{modal.desc}</span>
                 <Button
                   onClick={() => {
-                    window.open("https://wa.me/6282189471527?text=Halo%20saya%20ingin%20bertanya%20perihal%20travel");
+                    window.open("https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya");
                   }}
                 >
                   Pesan Sekarang
