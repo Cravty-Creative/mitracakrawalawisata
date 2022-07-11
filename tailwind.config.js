@@ -13,6 +13,9 @@ module.exports = {
       color: {
         primary: "#383B5A",
       },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
     },
     container: {
       center: true,

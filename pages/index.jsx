@@ -15,6 +15,8 @@ import Plan from "../components/section/Plan.section";
 import Footer from "../components/section/Footer.section";
 import Footnote from "../components/section/Footnote.section";
 import Modal from "../components/Modal";
+import Gallery from "../components/section/Gallery.section";
+import Legalitas from "../components/section/Legalitas.section";
 
 export default function Home() {
   const [modal, setModal] = useState({
@@ -33,28 +35,17 @@ export default function Home() {
   const [sidebarState, setSidebarState] = useState(false);
   return (
     <>
-      <Header
-        pageTitle="Travel Agent"
-        description="Travel Partner Agent for Everyone"
-        keyword="Travel, Haji, Umrah, Staycation, Holiday"
-      />
-      <Navbar
-        menuState={menuState}
-        setSidebarState={setSidebarState}
-        setMenuState={setMenuState}
-      />
-      <Sidebar
-        menuState={menuState}
-        sidebarState={sidebarState}
-        setSidebarState={setSidebarState}
-        setMenuState={setMenuState}
-      />
+      <Header pageTitle="Travel Agent" description="Travel Partner Agent for Everyone" keyword="Travel, Haji, Umrah, Staycation, Holiday" />
+      <Navbar menuState={menuState} setSidebarState={setSidebarState} setMenuState={setMenuState} />
+      <Sidebar menuState={menuState} sidebarState={sidebarState} setSidebarState={setSidebarState} setMenuState={setMenuState} />
       <Hero setModal={setModal} />
       <Promo setModal={setModal} />
       <Statistics />
       <About />
+      <Legalitas />
       <Layanan setModal={setModal} />
       <Popular setModal={setModal} />
+      <Gallery setModal={setModal} />
       <Testimoni />
       <Plan />
       <Footer />

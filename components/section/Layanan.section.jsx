@@ -41,9 +41,7 @@ export default function Layanan({ setModal }) {
     <div className={style["layanan"]} id="layanan">
       <div className={style["layanan-wrapper"]}>
         <h1 className="text-xl">Layanan</h1>
-        <h2 className="text-4xl font-semibold text-center">
-          Layanan Terbaik Kami
-        </h2>
+        <h2 className="text-4xl font-semibold text-center">Layanan Terbaik Kami</h2>
         <div className={style["card-wrapper"]}>
           {dataLayanan.map((item, index) => (
             <a
@@ -51,7 +49,7 @@ export default function Layanan({ setModal }) {
               key={index}
               data-aos="fade-up"
               data-aos-duration="800"
-              data-aos-delay={windowWidth > 1080 ? 800 * index : false}
+              data-aos-delay={windowWidth > 1280 ? 800 * index : false}
               onClick={() => {
                 setModal({
                   isOpen: true,
@@ -64,12 +62,7 @@ export default function Layanan({ setModal }) {
               }}
             >
               <div className={style["image-wrapper"]}>
-                <Image
-                  src={item.img}
-                  alt="umrah"
-                  layout="fill"
-                  className="object-cover"
-                />
+                <Image src={item.img} alt="umrah" layout="fill" className="object-cover" />
               </div>
               <div className="font-semibold text-lg">{item.title}</div>
               <div className="text-center">{item.desc}</div>

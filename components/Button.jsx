@@ -16,6 +16,20 @@ export default function Button({ variant = "primary", type = "button", children 
         </button>
       );
 
+    case "play-animation":
+      return (
+        <button className={style["btn-play"]} onClick={onClick}>
+          <div className={style["logo"]}></div>
+          <div className={`${style["text"]} animate-spin-slow`} id="btn-play-text">
+            {children.split("").map((char, index) => (
+              <span key={index} style={{ transform: `rotate(${index * 16.5}deg)` }}>
+                {char}
+              </span>
+            ))}
+          </div>
+        </button>
+      );
+
     default:
       break;
   }

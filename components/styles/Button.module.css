@@ -23,3 +23,45 @@
   border-2
   border-slate-700
 }
+
+.btn-play {
+  @apply
+  relative
+  w-28
+  h-28
+  rounded-full
+  flex
+  items-center
+  justify-center
+  hover:scale-105
+  motion-safe:duration-200
+}
+
+.logo {
+  @apply
+  w-2/3
+  h-2/3
+  bg-[url('/play.svg')]
+  bg-no-repeat
+  bg-cover
+}
+
+.text {
+  @apply
+  absolute
+  w-full
+  h-full
+}
+
+.text p {
+  @apply
+  h-full
+}
+
+.text span {
+  @apply
+  absolute
+  text-xs
+  text-white;
+  transform-origin: 0 56px;
+}
