@@ -1,4 +1,21 @@
 .legalitas {
   @apply
+  min-h-[90vh]
+  lg:min-h-[30vh]
   container
+  grid
+  grid-cols-5
+  md:grid-cols-2
+  lg:grid-cols-5
+  gap-4
+}
+
+.logo {
+  @apply
+  relative
+  lg:grayscale
+  lg:hover:grayscale-0
+  col-span-5
+  md:col-span-1
+  lg:col-span-1
 }

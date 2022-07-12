@@ -1,6 +1,6 @@
 .about {
   @apply
-  min-h-[90vh]
+  min-h-[80vh]
   flex
   justify-center
   items-center

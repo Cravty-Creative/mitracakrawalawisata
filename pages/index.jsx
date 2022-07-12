@@ -42,7 +42,7 @@ export default function Home() {
       <Promo setModal={setModal} />
       <Statistics />
       <About />
-      {/* <Legalitas /> */}
+      <Legalitas />
       <Layanan setModal={setModal} />
       <Popular setModal={setModal} />
       <Gallery setModal={setModal} />
