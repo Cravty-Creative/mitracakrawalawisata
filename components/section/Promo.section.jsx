@@ -73,29 +73,19 @@ export default function Promo({ setModal }) {
     <>
       <div className={style["promo-wrapper"]} id="promo">
         <div className={style["promo"]}>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="800"
-            className={style["promo-title"]}
-          >
-            <div className="font-semibold text-5xl mb-4">
-              Special Promo Untuk Anda
-            </div>
+          <div data-aos="fade-right" data-aos-duration="800" className={style["promo-title"]}>
+            <div className="font-semibold text-5xl mb-4">Promo Spesial Untuk Anda</div>
             <div>
-              Dapatkan paket perjalanan mewah dengan harga terbaik hanya di  <span>
-              <Image
-                src="/logo.png"
-                alt="logo"
-                width={16}
-                height={16}
-              />
-              </span><b>  Mitra Cakrawala Wisata</b></div>
+              Dapatkan paket perjalanan mewah dengan harga terbaik hanya di{" "}
+              <span>
+                <Image src="/logo.png" alt="logo" width={16} height={16} />
+              </span>
+              <b> Mitra Cakrawala Wisata</b>
+            </div>
             <div className={style["promo-cta-wrapper"]}>
               <Link href="#layanan">
                 <a>
-                  <Button className={style["btn-cta-hero"]}>
-                    Pesan Sekarang
-                  </Button>
+                  <Button className={style["btn-cta-hero"]}>Pesan Sekarang</Button>
                 </a>
               </Link>
               <a
@@ -106,20 +96,11 @@ export default function Promo({ setModal }) {
                 data-tooltip="Mulai percakapan"
                 data-flow="right"
               >
-                <Image
-                  src="/whatsapp-icon.png"
-                  alt="whatsapp-icon"
-                  width={34}
-                  height={34}
-                />
+                <Image src="/whatsapp-icon.png" alt="whatsapp-icon" width={34} height={34} />
               </a>
             </div>
           </div>
-          <div
-            className={style["promo-slider"]}
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <div className={style["promo-slider"]} data-aos="fade-up" data-aos-duration="1000">
             <Swiper
               spaceBetween={30}
               slidesPerView={slides}
@@ -152,35 +133,17 @@ export default function Promo({ setModal }) {
                     }}
                   >
                     <div className={style["card-image"]}>
-                      <Image
-                        src={`${item.photo}${index + 1}.png`}
-                        alt="card-1"
-                        layout="fill"
-                      />
+                      <Image src={`${item.photo}${index + 1}.png`} alt="card-1" layout="fill" />
                     </div>
                   </a>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <button
-              className={`${style["btn-chevron"]} ${style["btn-chevron-prev"]} promo-btn-prev`}
-            >
-              <Image
-                src="/chevron-left.svg"
-                alt="btn-left"
-                width={24}
-                height={24}
-              />
+            <button className={`${style["btn-chevron"]} ${style["btn-chevron-prev"]} promo-btn-prev`}>
+              <Image src="/chevron-left.svg" alt="btn-left" width={24} height={24} />
             </button>
-            <button
-              className={`${style["btn-chevron"]} ${style["btn-chevron-next"]} promo-btn-next`}
-            >
-              <Image
-                src="/chevron-right.svg"
-                alt="btn-left"
-                width={24}
-                height={24}
-              />
+            <button className={`${style["btn-chevron"]} ${style["btn-chevron-next"]} promo-btn-next`}>
+              <Image src="/chevron-right.svg" alt="btn-left" width={24} height={24} />
             </button>
           </div>
         </div>

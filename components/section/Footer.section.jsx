@@ -38,76 +38,27 @@ export default function Footer() {
             </Link>
             <div className="lg:w-1/2 mt-2">Jl South City Barat Blok B1-17 Pondok Cabe Udik Pamulang Tangerang Selatan 15418</div>
             <div className={style["footer-1-social"]}>
-              <a 
-                href="https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya" 
-                target="_blank" 
+              <a
+                href="https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya"
+                target="_blank"
                 rel="noopener noreferrer"
                 className={style["link-to-center"]}
                 data-tooltip="0821-8947-1527"
                 data-flow="top"
               >
-                <Image
-                  src="/whatsapp-icon.png"
-                  alt="whatsapp-icon"
-                  width={36}
-                  height={36}
-                />
+                <Image src="/whatsapp-icon.png" alt="whatsapp-icon" width={36} height={36} />
               </a>
-              <a 
-                href="mailto:admin@mitracakrawalawisata.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                data-tooltip="admin@mitracakrawalawisata.com"
-                data-flow="top"
-              >
-                <Image
-                  src="/email.png"
-                  alt="email-icon"
-                  width={36}
-                  height={36}
-                />
+              <a href="mailto:admin@mitracakrawalawisata.com" target="_blank" rel="noopener noreferrer" data-tooltip="admin@mitracakrawalawisata.com" data-flow="top">
+                <Image src="/email.png" alt="email-icon" width={36} height={36} />
               </a>
-              <a 
-                href="https://id-id.facebook.com/MCWtourtravel/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                data-tooltip="@MCWtourtravel"
-                data-flow="top"
-              >
-                <Image
-                  src="/facebook.png"
-                  alt="facebook-icon"
-                  width={36}
-                  height={36}
-                />
+              <a href="https://id-id.facebook.com/MCWtourtravel/" target="_blank" rel="noopener noreferrer" data-tooltip="@MCWtourtravel" data-flow="top">
+                <Image src="/facebook.png" alt="facebook-icon" width={36} height={36} />
               </a>
-              <a 
-                href="https://www.instagram.com/mitra.cakrawala.official/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                data-tooltip="@mitra.cakrawala.official"
-                data-flow="top"
-              >
-                <Image
-                  src="/instagram.png"
-                  alt="instagram-icon"
-                  width={36}
-                  height={36}
-                />
+              <a href="https://www.instagram.com/mitra.cakrawala.official/" target="_blank" rel="noopener noreferrer" data-tooltip="@mitra.cakrawala.official" data-flow="top">
+                <Image src="/instagram.png" alt="instagram-icon" width={36} height={36} />
               </a>
-              <a 
-                href="https://www.tiktok.com/@mcwtourtravel" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                data-tooltip="@mcwtourtravel"
-                data-flow="top"
-              >
-                <Image
-                  src="/tiktok.png"
-                  alt="tiktok-icon"
-                  width={36}
-                  height={36}
-                />
+              <a href="https://www.tiktok.com/@mcwtourtravel" target="_blank" rel="noopener noreferrer" data-tooltip="@mcwtourtravel" data-flow="top">
+                <Image src="/tiktok.png" alt="tiktok-icon" width={36} height={36} />
               </a>
             </div>
           </div>
