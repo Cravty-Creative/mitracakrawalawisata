@@ -70,7 +70,7 @@ export default function Modal({ modal, setModal }) {
                 <h1 className="font-semibold text-xl pr-8">{modal.title}</h1>
                 <div className="flex flex-col gap-1">
                   <span className="font-sm">Price</span>
-                  <span className="font-bold text-2xl">{modal.price.toLowerCase() === "contact sales" || modal.price.toLowerCase() === "contact us" ? modal.price : "IDR " + modal.price}</span>
+                  <span className="font-bold text-2xl">{modal.price}</span>
                 </div>
                 <span>{modal.desc}</span>
                 <Button

@@ -34,59 +34,59 @@ export default function Testimoni() {
   const cardImageUrl = [
     {
       customerName: "Zikri",
-      customerOrder: "Haji Plus",
+      customerPhoto: "/gallery-1.jpeg",
+      customerOrder: "Haji Ke Tanah Suci",
       review:
-        "Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Libero nunc consequat interdum varius sit amet mattis vulputate. Tristique senectus et netus et malesuada fames ac. Volutpat maecenas volutpat blandit aliquam.",
-      date: "8 June 2022",
+        "Layanannya sangat memuaskan, dengan fasilitas hotel bintang 5 dan maskapai penerbangan Saudi Airlines kelas bisnis menjadikan perjalanan haji saya jadi lebih berkesan.",
+      date: "13 Juli 2022",
     },
     {
       customerName: "Dinda",
+      customerPhoto: "/gallery-2.jpeg",
       customerOrder: "Umrah Berkah",
       review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Layanan umroh yang memuaskan, walaupun hotelnya bintang 3 tetapi fasilitasnya lengkap dan nyaman, penerbangannya juga sangat nyaman dan aman. Mantap sekali.",
+      date: "8 Juni 2022",
+    },
+    {
+      customerName: "Jenny",
+      customerPhoto: "/gallery-3.jpeg",
+      customerOrder: "Explore Turkey",
+      review:
+        "Perjalanan yang sangat berkesan, walaupun dengan harga yang murah tetapi fasilitas dan pelayanannya sangat baik.",
+      date: "21 June 2022",
+    },
+    {
+      customerName: "Nurhasanah",
+      customerPhoto: "/gallery-4.jpeg",
+      customerOrder: "Wisata Halal",
+      review:
+        "Senang sekali bisa wisata berkeliling di negara timur tengah dengan harga murah dan fasilitas yang lengkap.",
       date: "8 June 2022",
     },
     {
       customerName: "Komariah",
-      customerOrder: "Haji Plus",
+      customerPhoto: "/gallery-5.jpeg",
+      customerOrder: "Haji Ke Tanah Suci",
       review:
-        "Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Libero nunc consequat interdum varius sit amet mattis vulputate. Tristique senectus et netus et malesuada fames ac. Volutpat maecenas volutpat blandit aliquam.",
-      date: "8 June 2022",
+        "Layanannya sangat memuaskan, dengan fasilitas hotel bintang 5 dan maskapai penerbangan Saudi Airlines kelas bisnis menjadikan perjalanan haji saya jadi lebih berkesan.",
+      date: "20 Juli 2022",
     },
     {
-      customerName: "Jaenulatif",
+      customerName: "Jaenudin",
+      customerPhoto: "/gallery-7.jpeg",
       customerOrder: "Umrah Berkah",
       review:
-        "Ultricies mi quis hendrerit dolor magna eget est lorem ipsum. Sit amet tellus cras adipiscing enim. Purus ut faucibus pulvinar elementum integer enim. In massa tempor nec feugiat nisl pretium fusce id velit. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Quam quisque id diam vel quam. At elementum eu facilisis sed odio morbi. Eleifend mi in nulla posuere sollicitudin aliquam.",
-      date: "8 June 2022",
+        "Layanan umroh yang memuaskan, walaupun hotelnya bintang 3 tetapi fasilitasnya lengkap dan nyaman, penerbangannya juga sangat nyaman dan aman. Mantap sekali.",
+      date: "8 Maret 2022",
     },
     {
-      customerName: "Widya",
-      customerOrder: "Turki",
+      customerName: "Hidayat",
+      customerPhoto: "/gallery-8.jpeg",
+      customerOrder: "Umroh VVIP",
       review:
-        "Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Libero nunc consequat interdum varius sit amet mattis vulputate. Tristique senectus et netus et malesuada fames ac. Volutpat maecenas volutpat blandit aliquam.",
-      date: "8 June 2022",
-    },
-    {
-      customerName: "Komariah",
-      customerOrder: "Haji Plus",
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "8 June 2022",
-    },
-    {
-      customerName: "Jaenulatif",
-      customerOrder: "Umrah Berkah",
-      review:
-        "Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Libero nunc consequat interdum varius sit amet mattis vulputate. Tristique senectus et netus et malesuada fames ac. Volutpat maecenas volutpat blandit aliquam.",
-      date: "8 June 2022",
-    },
-    {
-      customerName: "Widya",
-      customerOrder: "Turki",
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      date: "8 June 2022",
+        "Layanan umroh yang memuaskan dengan hotel bintang 5, penerbangannya juga sangat nyaman dan aman. Mantap sekali.",
+      date: "9 June 2022",
     },
   ];
 
@@ -138,10 +138,11 @@ export default function Testimoni() {
                   <div className="flex gap-4 items-center">
                     <div className={style["card-image"]}>
                       <Image
-                        src="/user.svg"
+                        src={item.customerPhoto}
                         alt="card-image"
-                        height={32}
-                        width={32}
+                        height={56}
+                        width={56}
+                        className={style["card-image"]}
                       />
                     </div>
                     <div className="flex flex-col gap-1">

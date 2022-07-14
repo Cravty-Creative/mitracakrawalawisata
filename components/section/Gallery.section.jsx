@@ -17,9 +17,9 @@ export default function Gallery({ setModal }) {
     window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
   }, []);
 
-  const slideOne = ["/malaysia.jpg", "/mecca-1.jpg", "/mecca-2.jpg"];
-  const slideTwo = ["/hero-footer.jpeg", "/egypt.jpg", "/mecca-night.jpg"];
-  const slideThree = ["/singapore.jpg", "/mecca-hero.jpg", "/mecca-night2.jpg"];
+  const slideOne = ["/gallery-1.jpeg", "/mecca-2.jpg", "/gallery-4.jpeg"];
+  const slideTwo = ["/gallery-3.jpeg", "/gallery-2.jpeg", "/gallery-5.jpeg"];
+  const slideThree = ["/gallery-6.jpeg", "/gallery-7.jpeg", "/gallery-8.jpeg"];
 
   return (
     <div className={style["bg-galery"]} id="galery">

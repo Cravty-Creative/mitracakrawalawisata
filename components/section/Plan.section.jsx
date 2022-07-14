@@ -12,17 +12,17 @@ export default function Plan() {
   const cardContent = [
     {
       title: "Umrah Special Promo",
-      price: "12,000",
+      price: "IDR 22,5 jt",
       features: ["Transportation", "Food", "Hotel", "Tour Guide"],
     },
     {
       title: "Umrah Executive",
-      price: "24,000",
+      price: "By Request",
       features: ["Transportation", "Food", "Hotel", "Tour Guide"],
     },
     {
       title: "Haji Tanpa Antri",
-      price: "33,000",
+      price: "USD 12 rb ~ 33 rb",
       features: ["Transportation", "Food", "Hotel", "Tour Guide"],
     },
   ];
@@ -36,7 +36,7 @@ export default function Plan() {
             <div className={`${style["card"]} ${index === 1 ? style["middle"] : ""}`} key={index} data-aos="flip-left" data-aos-duration="500" data-aos-delay={800}>
               <div className="flex flex-col gap-6 items-center">
                 <span className="font-semibold text-lg">{item.title}</span>
-                <span className="font-bold text-2xl">$ {item.price}</span>
+                <span className="font-bold text-2xl">{item.price}</span>
                 <span>Fasilitas</span>
                 <div className="flex flex-col gap-3">
                   {(item.features || []).map((feature, indexFeature) => (
@@ -52,7 +52,7 @@ export default function Plan() {
                   window.open("https://wa.me/6282189471527?text=Hai%20Mitra,%20saya%20mau%20dong%20detail%20promonya");
                 }}
               >
-                Contact Us
+                Hubungi Kami
               </Button>
             </div>
           ))}

@@ -34,25 +34,25 @@ export default function Promo({ setModal }) {
   const cardImageUrl = [
     {
       title: "Umroh Berkah 9 Hari",
-      price: "27,500,000",
+      price: "IDR 27,5 jt",
       desc: "Saudia Airlines dengan Hotel bintang 4 di Nozol Royal IN Madinah dan Al-Masa di Mekkah program selama 9 Hari",
       photo: "/paket-",
     },
     {
       title: "Explore Turkey 9 Hari",
-      price: "14,900,000",
+      price: "IDR 14,9 jt",
       desc: "Turkish Airlines di periode Januari 2023 - Maret 2023 program selama 9 Hari",
       photo: "/paket-",
     },
     {
       title: "Umroh Berkah 12 Hari",
-      price: "28,500,000",
+      price: "IDR 28,5 jt",
       desc: "Etihad Airlines dengan Hotel bintang 3 di Mirrage Salam Madinah dan Mathwer Jiwar di Mekkah program selama 12 Hari",
       photo: "/paket-",
     },
     {
       title: "Umroh Turkey 12 Hari",
-      price: "34,500,000",
+      price: "IDR 34,5 jt",
       desc: "Turkish Airlines dengan Hotel bintang 5 di Mileniumal Aqeeq di Madinah, Swiss Al-Maqom di Mekkah & Radison Blu di Istanbul program selama 12 Hari",
       photo: "/paket-",
     },
@@ -64,7 +64,7 @@ export default function Promo({ setModal }) {
     },
     {
       title: "Umroh VVIP",
-      price: "55,500,000",
+      price: "IDR 55,5 jt",
       desc: "Saudi Airlines (Business Class) dengan Hotel bintang 5 di Mileniumal Aqeeq di Madinah & Swiss Al-Maqom di Mekkah program selama 9 Hari",
       photo: "/paket-",
     },
